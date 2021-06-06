@@ -159,6 +159,15 @@
            
         </form>
 </div>
+<!----UC8-Ability to set event listener on salary range to disply appropriate value-->>
+<script>
+    const salary = document.getElementById("salary");
+    const output = document.getElementById("salary-output");
+    output.innerHTML = salary.value;
+    salary.oninput = function () {
+        output.innerHTML = this.value;
+    }
+</script>
 </body>
 
 </html>
